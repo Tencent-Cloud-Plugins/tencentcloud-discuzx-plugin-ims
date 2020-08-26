@@ -86,7 +86,7 @@ class IMSActions
             return true;
         }
         if ( $response->getData()->EvilFlag !== 0 || $response->getData()->EvilType !== 100 ) {
-            throw new \Exception('图片检测不通过');
+            throw new \Exception(lang('plugin/tencentcloud_ims','picture_invalid'));
         }
         return true;
     }
@@ -103,7 +103,7 @@ class IMSActions
     {
         try {
             if (empty($imgContent) && empty($imgUrl)) {
-                throw new \Exception('图片内容和图片链接不能同时为空');
+                throw new \Exception(lang('plugin/tencentcloud_ims','picture_invalid'));
             }
             $cred = new Credential($IMSOptions->getSecretID(), $IMSOptions->getSecretKey());
             $clientProfile = new ClientProfile();

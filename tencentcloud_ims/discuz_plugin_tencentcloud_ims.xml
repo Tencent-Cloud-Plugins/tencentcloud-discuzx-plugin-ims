@@ -2,15 +2,15 @@
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
 	<item id="Version"><![CDATA[X3.4]]></item>
-	<item id="Time"><![CDATA[2020-07-13 10:59]]></item>
-	<item id="From"><![CDATA[Discuz! Board (https://openapp.qq.com/docs/DiscuzX/)]]></item>
+	<item id="Time"><![CDATA[2020-08-20 14:05]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://local.dzx.com/)]]></item>
 	<item id="Data">
 		<item id="plugin">
 			<item id="available"><![CDATA[0]]></item>
 			<item id="adminid"><![CDATA[1]]></item>
 			<item id="name"><![CDATA[腾讯云图片内容安全]]></item>
 			<item id="identifier"><![CDATA[tencentcloud_ims]]></item>
-			<item id="description"><![CDATA[对发帖/回帖上传的图片类附件进行检测]]></item>
+			<item id="description"><![CDATA[对用户发帖/回帖上传的图片类附件调用腾讯云API进行检测能精准识别涉黄、涉恐、涉政等有害内容节省人力成本，提高审核效率]]></item>
 			<item id="datatables"><![CDATA[]]></item>
 			<item id="directory"><![CDATA[tencentcloud_ims/]]></item>
 			<item id="copyright"><![CDATA[腾讯云]]></item>
@@ -45,6 +45,29 @@
 			</item>
 		</item>
 		<item id="version"><![CDATA[X3.4]]></item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="require_sdk"><![CDATA[缺少依赖文件，请确保安装了腾讯云sdk]]></item>
+				<item id="include"><![CDATA[包含]]></item>
+				<item id="empty_"><![CDATA[图片内容和图片链接不能同时为空]]></item>
+				<item id="picture_invalid"><![CDATA[图片检测不通过]]></item>
+				<item id="param_error"><![CDATA[ 为空或格式错误]]></item>
+				<item id="custom_error"><![CDATA[ 自定义密钥传参错误]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="setting"><![CDATA[参数设置]]></item>
+				<item id="yes"><![CDATA[是]]></item>
+				<item id="no"><![CDATA[否]]></item>
+				<item id="visit"><![CDATA[访问]]></item>
+				<item id="custom_key"><![CDATA[自定义密钥：]]></item>
+				<item id="custom_key_desc"><![CDATA[为该插件配置单独定义的腾讯云密钥]]></item>
+				<item id="secret_key_desc"><![CDATA[获取SecretId和SecretKey或通过"新建密钥"创建密钥串]]></item>
+				<item id="secret_manage"><![CDATA[密钥管理]]></item>
+				<item id="save"><![CDATA[保存]]></item>
+				<item id="docs_center"><![CDATA[文档中心]]></item>
+				<item id="support"><![CDATA[意见反馈]]></item>
+			</item>
+		</item>
 		<item id="installfile"><![CDATA[install.php]]></item>
 		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
 		<item id="enablefile"><![CDATA[enable.php]]></item>

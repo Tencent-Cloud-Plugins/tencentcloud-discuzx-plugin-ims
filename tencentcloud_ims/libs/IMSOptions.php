@@ -54,7 +54,7 @@ class IMSOptions
     public function setCustomKey($customKey)
     {
         if ( !in_array($customKey, array(self::GLOBAL_KEY, self::CUSTOM_KEY)) ) {
-            throw new \Exception('自定义密钥传参错误');
+            throw new \Exception(lang('plugin/tencentcloud_ims','custom_error'));
         }
         $this->customKey = intval($customKey);
     }

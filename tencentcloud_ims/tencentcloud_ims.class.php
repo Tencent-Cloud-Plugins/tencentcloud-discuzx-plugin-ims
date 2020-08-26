@@ -20,7 +20,7 @@ if (!defined('IN_DISCUZ')){
 defined('TENCENT_DISCUZX_IMS_DIR')||define( 'TENCENT_DISCUZX_IMS_DIR', __DIR__.DIRECTORY_SEPARATOR);
 defined('TENCENT_DISCUZX_IMS_PLUGIN_NAME')||define( 'TENCENT_DISCUZX_IMS_PLUGIN_NAME', 'tencentcloud_ims');
 if (!is_file(TENCENT_DISCUZX_IMS_DIR.'vendor/autoload.php')) {
-    exit('缺少依赖文件，请确保安装了腾讯云sdk');
+    exit(lang('plugin/tencentcloud_ims','require_sdk'));
 }
 require_once 'vendor/autoload.php';
 use TencentDiscuzIMS\IMSActions;
@@ -28,8 +28,7 @@ class plugin_tencentcloud_ims
 {
     public function common()
     {
-        global $_G;
-        if ( $_G['gp_mod'] !== 'swfupload' || $_G['gp_action'] !== 'swfupload') {
+        if ( $_GET['mod'] !== 'swfupload' || $_GET['action'] !== 'swfupload') {
             return;
         }
         $dzxIMS = new IMSActions();

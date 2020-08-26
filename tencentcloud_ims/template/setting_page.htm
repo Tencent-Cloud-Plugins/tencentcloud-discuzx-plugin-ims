@@ -22,19 +22,19 @@
     <table class="tb tb2">
         <tbody>
         <tr>
-            <th colspan="15" class="partition">参数设置</th>
+            <th colspan="15" class="partition">{lang tencentcloud_ims:setting}</th>
         </tr>
         <tr>
-            <td colspan="2" class="td27">自定义密钥:</td>
+            <td colspan="2" class="td27">{lang tencentcloud_ims:custom_key}</td>
         </tr>
         <tr class="noborder">
             <td class="vtop rowform">
                 <ul>
-                    <li <!--{if $customKey === 1 }-->class="checked" <!--{/if}--> ><input <!--{if $customKey === 1 }-->checked="checked" <!--{/if}--> id="custom-key" class="radio" type="radio" name="customKey" value="1"><label for="custom-key">是</label></li>
-                    <li <!--{if $customKey === 0 }-->class="checked" <!--{/if}--> ><input <!--{if $customKey === 0 }-->checked="checked" <!--{/if}--> class="radio" id="global-key" type="radio" name="customKey" value="0"><label for="global-key">否</label></li>
+                    <li <!--{if $customKey === 1 }-->class="checked" <!--{/if}--> ><input <!--{if $customKey === 1 }-->checked="checked" <!--{/if}--> id="custom-key" class="radio" type="radio" name="customKey" value="1"><label for="custom-key">{lang tencentcloud_ims:yes}</label></li>
+                    <li <!--{if $customKey === 0 }-->class="checked" <!--{/if}--> ><input <!--{if $customKey === 0 }-->checked="checked" <!--{/if}--> class="radio" id="global-key" type="radio" name="customKey" value="0"><label for="global-key">{lang tencentcloud_ims:no}</label></li>
                 </ul>
             </td>
-            <td class="vtop tips2">为该插件配置单独定义的腾讯云密钥</td>
+            <td class="vtop tips2">{lang tencentcloud_ims:custom_key_desc}</td>
         </tr>
         <tr>
             <td colspan="2" class="td27" ><label for="secret-id">SecretId:</label></td>
@@ -52,13 +52,13 @@
             <td class="vtop rowform">
                 <input name="secretKey" size="42" id="secret-key" type="text" class="text" value="{$secretKey}">
             </td>
-            <td class="vtop tips2">访问<a href="https://console.qcloud.com/cam/capi" target="_blank">密钥管理</a>获取
-                SecretId和SecretKey或通过"新建密钥"创建密钥串</td>
+            <td class="vtop tips2">{lang tencentcloud_ims:visit}<a href="https://console.qcloud.com/cam/capi" target="_blank">{lang tencentcloud_ims:secret_manage}</a>
+                {lang tencentcloud_ims:secret_key_desc}</td>
         </tr>
         <tr>
             <td colspan="15">
                 <div class="fixsel">
-                    <input type="submit" class="btn"  id="txc-submit-btn" value="保存" />
+                    <input type="submit" class="btn"  id="txc-submit-btn" value="{lang tencentcloud_ims:save}" />
                 </div>
             </td>
         </tr>
@@ -66,10 +66,10 @@
     </table>
 </form>
 <div style="text-align: center;flex: 0 0 auto;margin-top: 3rem;">
-    <a href="https://openapp.qq.com/docs/DiscuzX/ims.html" target="_blank">文档中心</a> | <a href="https://github.com/Tencent-Cloud-Plugins/tencentcloud-discuzx-plugin-ims" target="_blank">GitHub</a> | <a
-        href="https://support.qq.com/product/164613" target="_blank">意见反馈</a>
+    <a href="https://openapp.qq.com/docs/DiscuzX/ims.html" target="_blank">{lang tencentcloud_ims:docs_center}</a> | <a href="https://github.com/Tencent-Cloud-Plugins/tencentcloud-discuzx-plugin-ims" target="_blank">GitHub</a> | <a
+        href="https://support.qq.com/product/164613" target="_blank">{lang tencentcloud_ims:support}</a>
 </div>
-<script src="source/plugin/tencentcloud_sms/js/jquery.min.js"></script>
+<script src="source/plugin/tencentcloud_ims/js/jquery.min.js"></script>
 <script type="text/javascript">
     jQuery.noConflict();
     jQuery(function($){

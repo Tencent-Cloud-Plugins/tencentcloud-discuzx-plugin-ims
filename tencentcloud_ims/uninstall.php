@@ -25,4 +25,6 @@ require_once 'vendor/autoload.php';
 use TencentDiscuzIMS\IMSActions;
 
 runquery("DELETE FROM  cdb_tencentcloud_pluginInfo  WHERE plugin_name = 'tencentcloud_ims'");
+runquery("DELETE FROM  cdb_common_setting  WHERE skey = 'tencentcloud_ims'");
+
 IMSActions::uploadDzxStatisticsData('uninstall');
