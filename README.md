@@ -56,7 +56,8 @@
 
 ### 7.1 tencentcloud-discuzx-plugin-ims v1.0.0
 - 对用户在发帖/回帖场景中上传的图片附件进行安全审核，识别过滤涉及黄、爆、恐的信息。
-
+###7.2 tencentcloud-discuzx-plugin-ims v1.1.0
+支持触屏版
 ---
 本项目由腾讯云中小企业产品中心建设和维护，了解与该插件使用相关的更多信息，请访问[春雨文档中心](https://openapp.qq.com/docs/DiscuzX/ims.html) 
 
