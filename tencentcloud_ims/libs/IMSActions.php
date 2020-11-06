@@ -34,6 +34,7 @@ class IMSActions
         'image/jpg',
         'image/gif',
         'image/bmp',
+        'application/octet-stream',
     ];
 
     /**

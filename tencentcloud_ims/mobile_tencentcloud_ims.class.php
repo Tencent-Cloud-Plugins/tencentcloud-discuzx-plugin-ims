@@ -24,19 +24,19 @@ if (!is_file(TENCENT_DISCUZX_IMS_DIR.'vendor/autoload.php')) {
 }
 require_once 'vendor/autoload.php';
 use TencentDiscuzIMS\IMSActions;
-class plugin_tencentcloud_ims
+class mobileplugin_tencentcloud_ims
 {
     public function common()
     {
-        if ( $_GET['mod'] !== 'swfupload' || $_GET['action'] !== 'swfupload') {
+        if ( $_GET['mod'] !== 'swfupload' || $_GET['operation'] !== 'upload' || $_GET['type'] !== 'image') {
             return;
         }
         $dzxIMS = new IMSActions();
         try {
             $dzxIMS->examineImage($_FILES['Filedata']);
         } catch (\Exception $exception) {
-            //不可自定义错误消息，只能使用dz的错误码
-            echo -9;
+            //不可自定义错误信息，只能使用dz的错误码
+            echo '||9|||||-1';
             exit();
         }
 
